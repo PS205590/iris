@@ -1,0 +1,65 @@
+@media screen and (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header",
+        "nav",
+        "article";
+    }
+    
+    .header {
+        grid-area: "header";
+        width: 100%;
+        text-align: center;
+        color: orchid;
+        width: 100%;
+    }
+    .nav a{
+        grid-area: "nav";
+        position: relative;
+        font-size: 1.25em;
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+        text-decoration: none;
+        color: orchid;
+    }
+    .nav {
+        text-align: center;
+    }
+
+    .article {
+        grid-area: "article";
+        text-align: center;
+        width: 100%;
+        color: grey;
+        font-weight: bold;
+    }
+    .article h2 {
+        color: grey;
+        font-weight: bold;
+    }
+    .article h1 {
+        color: orchid;
+    }
+    .photo > img {
+        width: 95%;
+        align-self: center;
+    }
+    footer {
+        display: flex;
+        font-weight: bold;
+        flex-direction: column;
+        text-align: center;
+        text-decoration: none;
+    }
+    footer > p {
+        color: grey;
+    }
+    footer > a {
+        text-decoration: none;
+        color: orchid;
+        font-weight: bold;
+        font-size: 1.75em;
+    }
+}
